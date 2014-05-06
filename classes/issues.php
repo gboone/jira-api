@@ -5,7 +5,7 @@ class Issues extends Base {
     function __construct() {
 	parent::__construct();
     }
-    
+
     public function transition($issue, $transition, $message) {
 	$url_prep = $this->jira_url . '/issue/' . $issue . 'transitions';
 	$ID = $this->parse_transition($transition);

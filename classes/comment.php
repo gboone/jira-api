@@ -7,6 +7,7 @@ class Comment extends Base {
 	parent::construct();
     }
     
+  
     public function add_comment($issue, $body) {
 	$post_to = $this->jira_url . '/issue/' . $issue . '/comment';
 	$json_array = array('body' => $body);
